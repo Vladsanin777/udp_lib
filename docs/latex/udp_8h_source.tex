@@ -1,0 +1,93 @@
+\doxysection{udp.\+h}
+\hypertarget{udp_8h_source}{}\label{udp_8h_source}\doxymbox{\hyperlink{udp_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ \_\_UDP\_\_H\_\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ \_\_UDP\_\_H\_\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structudp__pack}{udp\_pack}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structudp__pack}{udp\_pack}}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00055\ \doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ \doxymbox{\hyperlink{group__UdpPack_gac073209d13c5a0e425b547924759b90f}{init\_udp\_pack}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00076\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_gaf1e2ebce0c63dad760436f66b5cca525}{set\_port\_source\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ port);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00097\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga34e91a82fe5ba0ff36b8b7a4162d2219}{set\_port\_destantion\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ port);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00122\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga4518c906c2ff7bcd466135f4457eb917}{set\_ip\_address\_source\_udp\_pack}}(\ \(\backslash\)}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ ip);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00148\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga9c92f03fd8bcd80c0a8717d8511f96bc}{set\_ip\_address\_destantion\_udp\_pack}}(\ \(\backslash\)}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ ip);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00175\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga367dbfef9bf2e55dbb3443861f82e76d}{add\_data\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keywordtype}{void}\ *\ data,\ uint16\_t\ size);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00198\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_gab4a07410734eee0dede9a056963e2586}{set\_data\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{void}\ *\ \textcolor{keyword}{const}\ data,\ \ \(\backslash\)}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ uint16\_t\ size);}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00225\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga9f171c629d5f8a7ff24ccd920dd0bf69}{add\_byte\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \(\backslash\)}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ \textcolor{keywordtype}{byte});}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00246\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_gaf49eea4ce97362fed222c0d35f4e80b6}{set\_input\_data\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00267\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga0e4c3a45b2cddd95cd6369ce1138eea1}{set\_file\_data\_udp\_pack}}(\ \(\backslash\)}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ file\_name);}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00289\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga6c39bc361feefc6b011fb569fa8d3b00}{set\_interface\_udp\_pack}}(\ \(\backslash\)}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ interface);}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00310\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga4cb18d49955b5f28a3b5087c585ef31c}{send\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00340\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga01073fc5ad591e38da01f4387c19e69a}{get\_mac\_address\_source\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00370\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_gaebc458fc40b923dfe0589e7f341acdf6}{get\_mac\_address\_destantion\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00371\ }
+\DoxyCodeLine{00395\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_ga84f3d8d0bdf4a67eec9f41953d14bda3}{set\_mac\_address\_source\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \(\backslash\)}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ mac\_address);}
+\DoxyCodeLine{00397\ }
+\DoxyCodeLine{00421\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_gabd1e12a15ac9abc09d83ce930b38ae8a}{set\_mac\_address\_destantion\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack,\ \(\backslash\)}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ mac\_address);}
+\DoxyCodeLine{00423\ }
+\DoxyCodeLine{00455\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_gad6b4c7e549d5e18d03a0b2390e91f9fe}{get\_interface\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00488\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga629ad0b2e51e286471cb9fd9fbbb215f}{get\_port\_source\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00489\ }
+\DoxyCodeLine{00521\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga85eee6188e607d0ee01af4ce1045e1f2}{get\_port\_destantion\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00522\ }
+\DoxyCodeLine{00554\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga51bca39eb65c7b8f6e34938d278bdedd}{get\_ip\_address\_source\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00555\ }
+\DoxyCodeLine{00587\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga45f59892166b06c807f354c942ccd5dc}{get\_ip\_address\_destantion\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00588\ }
+\DoxyCodeLine{00615\ uint16\_t\ \doxymbox{\hyperlink{group__UdpPack_ga82c7f136a32df0299f5e5563094fbc4a}{get\_size\_data\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00616\ }
+\DoxyCodeLine{00639\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga19e05e94bf630dbc97584b734ef176df}{get\_data\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00640\ }
+\DoxyCodeLine{00668\ \textcolor{keywordtype}{char}\ *\ \doxymbox{\hyperlink{group__UdpPack_ga41d3c898afbfea462344aa3615b28c1c}{get\_data\_hex\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00669\ }
+\DoxyCodeLine{00692\ ssize\_t\ \doxymbox{\hyperlink{group__UdpPack_gaefb857160af3891be362e938b6955c88}{print\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00693\ }
+\DoxyCodeLine{00711\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{group__UdpPack_gae2b2cb87ed580f5384fce15a6599f364}{destroy\_udp\_pack}}(\doxymbox{\hyperlink{group__UdpPack_ga6356b6b21b2a1a5c62a7d1085eb6f025}{udp\_pack\_t}}\ pack);}
+\DoxyCodeLine{00712\ }
+\DoxyCodeLine{00714\ }
+\DoxyCodeLine{00715\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00716\ }
+\DoxyCodeLine{00717\ \}}
+\DoxyCodeLine{00718\ }
+\DoxyCodeLine{00719\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00720\ }
+\DoxyCodeLine{00721\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
